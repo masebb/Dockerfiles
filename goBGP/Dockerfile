@@ -37,6 +37,5 @@ EXPOSE 179/tcp
 
 WORKDIR /
 
-ENTRYPOINT ["gobgpd"]
-CMD ["-f", "/config/gobgp.toml"]
+CMD ["gobgp", "-f", "/config/gobgp.toml"]
 
