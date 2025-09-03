@@ -34,7 +34,7 @@ jobs:
 
       - name: Get latest GoBGP release tag
         id: gettag
-        uses: pozetroninc/github-action-get-release@v0.8.0
+        uses: pozetroninc/github-action-get-latest-release@master
         with:
           repository: osrg/gobgp
           token: ${{ secrets.GITHUB_TOKEN }}
