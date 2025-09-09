@@ -23,7 +23,7 @@ FROM debian:bookworm-slim AS runtime
 
 LABEL org.opencontainers.image.title="GoBGP" \
     org.opencontainers.image.description="GoBGP daemon and CLI on debian-slim" \
-    org.opencontainers.image.source="https://github.com/osrg/gobgp"
+    org.opencontainers.image.source="https://github.com/masebb/Dockerfiles"
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ca-certificates iproute2 libcap2-bin
